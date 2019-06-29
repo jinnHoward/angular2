@@ -1,0 +1,19 @@
+<div style="text-align:center">
+  <mat-toolbar>
+    <span><img src="../assets/logo_thumbnail.png" class="companyLogo"> </span>
+    <span>Daily Teammate Schedule</span>
+    <span class="example-fill-remaining-space"></span>
+    <span>
+      <button mat-icon-button [matMenuTriggerFor]="appMenu">
+        <mat-icon>Help</mat-icon>
+      </button>
+    </span>
+  </mat-toolbar>
+  <mat-menu #appMenu="matMenu" yPosition="above">
+    <button mat-menu-item>About</button>
+    <button mat-menu-item>Contact US</button>
+  </mat-menu>
+</div>
+<div class="pageContent">
+  <router-outlet></router-outlet>
+</div>
